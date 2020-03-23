@@ -1,0 +1,75 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #F2F2F2;
+
+  .error {
+    line-height: 500px;
+  }
+
+  &-wrapper {
+    margin: 0 auto;
+    width: 300px;
+    position: relative;
+  }
+
+  .input-field label {
+    color: #4F4A41;
+  }
+
+  .input-field input[type=text]:focus + label {
+    color: #4F4A41;
+  }
+
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #4F4A41;
+    box-shadow: 0 1px 0 0 #4F4A41;
+  }
+
+  .input-field input[type=password]:focus + label {
+    color: #4F4A41;
+  }
+
+  .input-field input[type=password]:focus {
+    border-bottom: 1px solid #4F4A41;
+    box-shadow: 0 1px 0 0 #4F4A41;
+  }
+
+  &-wrapper-btn-login {
+    background-color: #FBEEC1;
+    color: #4F4A41;
+    transition: all 0.6s;
+    width: 95px;
+  }
+
+  &-wrapper-btn-login:hover {
+    background-color: #4F4A41;
+    color: #FBEEC1;
+    transition: all 0.6s;
+  }
+
+  &-wrapper-btn-register {
+    position: absolute;
+    right: 0;
+    background-color: #4F4A41;
+    color: #FBEEC1;
+    transition: all 0.6s;
+    width: 95px;
+  }
+
+  &-wrapper-btn-register:hover {
+    background-color: #FBEEC1;
+    color: #4F4A41;
+    transition: all 0.6s;
+  }
+
+  .message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: #4F4A41;
+  }
+
+}
